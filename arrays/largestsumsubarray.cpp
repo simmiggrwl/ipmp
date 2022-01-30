@@ -1,6 +1,30 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+
+/** void largestsubarray(int arr[], int n){
+    int sum=0;
+    int maxsum=INT_MIN;
+    int start,end,change=0;
+    for(int i=0;i<n;i++){
+        sum+=arr[i];
+        if(sum>maxsum){
+            maxsum=sum;
+            end=i;
+            start=change;
+        }if(sum<0){
+            change=i+1;
+            sum=0;
+        }
+    }
+    
+    cout<<"Sum: "<<sum<<endl;
+    cout<<"Start index: "<<start<<endl;
+    cout<<"Last index: "<<end<<endl;
+    for(int i=start;i<=end;i++){
+        cout<<arr[i]<<" ";
+    }
+}*/
 void largestsum(int arr[], int n){
     int sumsofar=0;
     int sum=INT_MIN;
