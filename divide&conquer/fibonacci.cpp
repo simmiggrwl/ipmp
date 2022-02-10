@@ -11,6 +11,7 @@ void fib(int n){
     cout<<n<<" fibonnaci number is "<<arr[n]<<endl;
 }
 
+//o(n)
 void fib1(int n){
     int a=0;
     int b=1;
@@ -23,6 +24,7 @@ void fib1(int n){
     cout<<n<<" fibonacci number is "<<c<<endl;
 }
 
+//o(n)
 int fibrecursion(int n){
     if(n<=1) return n;
     else return fibrecursion(n-1)+fibrecursion(n-2);
